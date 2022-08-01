@@ -1,7 +1,6 @@
 package sn.isi.parcinfo.service;
 
 import sn.isi.parcinfo.entities.Role;
-import sn.isi.parcinfo.entities.Service;
 
 import java.util.List;
 

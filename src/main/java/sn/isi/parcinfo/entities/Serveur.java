@@ -24,7 +24,7 @@ public class Serveur {
     @ManyToOne
     private Ingenieur ingenieur = new Ingenieur();
     @OneToMany(mappedBy = "serveur")
-    private List<Service> services = new ArrayList<>();
+    private List<Services> services = new ArrayList<>();
 
 
 }

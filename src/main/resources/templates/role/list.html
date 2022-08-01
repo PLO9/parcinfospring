@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns="http://www.w3.org/1999/html"
+      layout:decorate="/accueil" lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <table>
+        <thead>
+        <tr>
+            <th>Identifiant</th>
+            <th>Nom</th>
+            <th>Action</th>
+            <th>Action</th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="role:${rolesListe}">
+            <td th:text="${role.id}"></td>
+            <td th:text="${role.nom}"></td>
+
+            <td>
+                <a th:href="@{/role/edit(id=${role.id})}">Editer</a>
+            </td>
+            <td>
+                <a th:href="@{/role/delete(id=${role.id})}">Supprimer</a>
+            </td>
+
+
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

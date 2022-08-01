@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/ingenieur/list">Ingenieur</a></li>
+                <li><a href="/serveur/list">Serveur</a></li>
+                <li><a href="/services/list">Service</a></li>
+                <li><a href="/role/list">Role</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div layout:fragment="content">
+
+        </div>
+    </div>
+</body>
+</html>

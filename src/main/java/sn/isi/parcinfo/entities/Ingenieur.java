@@ -25,6 +25,7 @@ public class Ingenieur {
     private String email;
     @Column(length = 200, nullable = false)
     private String password;
+    private int etat;
     @OneToMany(mappedBy = "ingenieur")
     private List<Serveur> serveurs = new ArrayList<>();
     @ManyToMany(fetch = FetchType.EAGER)

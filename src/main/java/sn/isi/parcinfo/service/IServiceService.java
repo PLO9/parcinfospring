@@ -1,14 +1,13 @@
 package sn.isi.parcinfo.service;
 
-import sn.isi.parcinfo.entities.Serveur;
-import sn.isi.parcinfo.entities.Service;
+import sn.isi.parcinfo.entities.Services;
 
 import java.util.List;
 
 public interface IServiceService {
-    public Service save(Service service);
-    public Service update(Service service);
-    public void remove(Service service);
-    public Service get(int id);
-    public List<Service> getAll();
+    public Services save(Services service);
+    public Services update(Services service);
+    public void remove(Services service);
+    public Services get(int id);
+    public List<Services> getAll();
 }
