@@ -39,17 +39,17 @@ public class ParcinfoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Role role = new Role();
-		role.setNom("ROLE_USER");
+		role.setNom("ROLE_ADMIN");
 
 		role = iRoleService.save(role);
 		//System.out.println(roles.getId());
 		//Creation d'un objet ingenieur à inserer
 		Ingenieur ingenieur = new Ingenieur();
-		ingenieur.setNom("DIOP");
-		ingenieur.setPrenom("Abdoulaye");
-		ingenieur.setEmail("ab.diop14@gmail.com");
+		ingenieur.setNom("SARR");
+		ingenieur.setPrenom("Mamadou");
+		ingenieur.setEmail("ma.sarr01@gmail.com");
 		BCryptPasswordEncoder pwdcrypt = new BCryptPasswordEncoder();
-		String pwd = pwdcrypt.encode("passer123");
+		String pwd = pwdcrypt.encode("P@$$er478");
 		ingenieur.setPassword(pwd);
 		ingenieur.setEtat(1);
 		List<Role> listRoles = new ArrayList<>();
